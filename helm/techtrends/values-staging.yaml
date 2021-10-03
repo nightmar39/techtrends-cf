@@ -2,10 +2,10 @@
 namespace:
   name: staging
 
-replicaCount: 2
+replicaCount: 1
 
 service:
-  port: 5111
+  port: 6111
 
 
 resources:
@@ -13,5 +13,5 @@ resources:
     cpu: 500m
     memory: 128Mi
   requests:
-    cpu: 300m
+    cpu: 250m
     memory: 90Mi
