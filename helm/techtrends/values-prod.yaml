@@ -1,0 +1,29 @@
+appName: techtrends
+
+namespace:
+  name: prod
+
+replicaCount: 5
+
+image:
+  repository: nightmar39/techtrends
+  pullPolicy: Always
+  # Overrides the image tag whose default is the chart appVersion.
+  tag: "latest"
+  containerPort: 3111 
+  livenessPath: healthz
+  readinessPath: healthz
+
+service:
+  type: ClusterIP
+  port: 7111
+  targetPort: 3111
+  protocol: TCP 
+
+resources:
+  limits:
+    cpu: 500m
+    memory: 256Mi
+  requests:
+    cpu: 350m
+    memory: 128Mi
