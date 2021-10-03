@@ -13,5 +13,5 @@ spec:
    valueFiles:
     - values-staging.yaml
   path: ./helm/techtrends
-  repoURL: https://github.com/nightmar39/techtrends.git
+  repoURL: https://github.com/nightmar39/techtrends-cf.git
   targetRevision: HEAD
