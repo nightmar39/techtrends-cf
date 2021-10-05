@@ -5,7 +5,7 @@ namespace:
 replicaCount: 1
 
 service:
-  port: 6111
+  port: 5111
 
 
 resources:
